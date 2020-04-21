@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PracticeApps\\dotnetapp\\dotnetapp.csproj": {}
+    "C:\\Users\\puvasude\\Desktop\\Apps\\PracticeApps\\dotnetapp\\dotnetapp.csproj": {}
   },
   "projects": {
-    "C:\\PracticeApps\\dotnetapp\\dotnetapp.csproj": {
+    "C:\\Users\\puvasude\\Desktop\\Apps\\PracticeApps\\dotnetapp\\dotnetapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PracticeApps\\dotnetapp\\dotnetapp.csproj",
+        "projectUniqueName": "C:\\Users\\puvasude\\Desktop\\Apps\\PracticeApps\\dotnetapp\\dotnetapp.csproj",
         "projectName": "dotnetapp",
-        "projectPath": "C:\\PracticeApps\\dotnetapp\\dotnetapp.csproj",
+        "projectPath": "C:\\Users\\puvasude\\Desktop\\Apps\\PracticeApps\\dotnetapp\\dotnetapp.csproj",
         "packagesPath": "C:\\Users\\puvasude\\.nuget\\packages\\",
-        "outputPath": "C:\\PracticeApps\\dotnetapp\\obj\\",
+        "outputPath": "C:\\Users\\puvasude\\Desktop\\Apps\\PracticeApps\\dotnetapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\puvasude\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
