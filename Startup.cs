@@ -34,7 +34,8 @@ namespace dotnetapp
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    String ans = Program.GdiFunc();
+                    await context.Response.WriteAsync(ans);
                 });
             });
         }

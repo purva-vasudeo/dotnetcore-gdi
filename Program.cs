@@ -27,13 +27,14 @@ namespace dotnetapp
                     webBuilder.UseStartup<Startup>();
                 });
 
-        public static void GdiFunc(string[] args)
+        public static string GdiFunc()
         {
+
             int width = 128;
             int height = 128;
-            var file = args[0];
+            var file = "ms";
             Console.WriteLine($"Loading {file}");
-            using(FileStream pngStream = new FileStream(args[0],FileMode.Open, FileAccess.Read))
+            using(FileStream pngStream = new FileStream("./ms.png",FileMode.Open, FileAccess.Read))
             using(var image = new Bitmap(pngStream))
             {
                 var resized = new Bitmap(width, height);
@@ -46,7 +47,9 @@ namespace dotnetapp
                     resized.Save($"resized-{file}", ImageFormat.Png);
                     Console.WriteLine($"Saving resized-{file} thumbnail");
                 }       
-            }     
+            }
+
+            return "All done. Check /wwwroot for resized file";
         }
     }
 }
